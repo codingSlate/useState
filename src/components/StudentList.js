@@ -16,7 +16,6 @@ function StudentList(props) {
           );
         })}
       </ul>
-      <p>Text here</p>
     </>
   );
 }

@@ -18,6 +18,8 @@ export default function App() {
     <div>
       <h2>Add Student Record</h2>
       <Form onAdded={onAddedHandler} />
+
+      {studList == 0 && <p>No Record Available</p>}
       <StudentList studList={studList} />
     </div>
   );
