@@ -9,6 +9,7 @@ function Form(props) {
   const submitHandler = (e) => {
     e.preventDefault();
     // console.log({name:form.sName, course:form.sCourse, grade:form.sGrade});
+
     props.onAdded({
       name: form.sName,
       course: form.sCourse,
