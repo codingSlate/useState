@@ -25,6 +25,7 @@ function Form(props) {
   };
   // ------------------------------------------------ courseHandler
   const courseHandler = (e) => {
+    // console.log(e.target.value)
     setForm((prevState) => {
       return { ...prevState, sCourse: e.target.value };
     });
@@ -47,13 +48,13 @@ function Form(props) {
         onChange={namehandler}
       />
 
-      <select defaultValue="" onChange={courseHandler} className="input">
+      <select defaultValue={form.sCourse} onChange={courseHandler} className="input">
         <option value="" disabled>
           Select Course
         </option>
-        <option value={form.sCourse == 'BSC' ? 'BSC' : ''}>BSC</option>
-        <option value={form.sCourse == 'BCA' ? 'BCA' : ''}>BCA</option>
-        <option value={form.sCourse == 'MCA' ? 'MCA' : ''}>MCA</option>
+        <option value='BSC'>BSC</option>
+        <option value='BCA'>BCA</option>
+        <option value='MCA'>MCA</option>
       </select>
 
       <div className="inpput">

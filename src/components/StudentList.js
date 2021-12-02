@@ -1,7 +1,7 @@
 import React from 'react';
 
 function StudentList(props) {
-  console.log("list display", props.studList);
+  console.log('list display', props.studList);
 
   return (
     <>
